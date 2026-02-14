@@ -7,7 +7,6 @@ const config = {
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
-    "*.{js,ts,jsx,tsx,mdx}",
   ],
   prefix: "",
   theme: {
@@ -53,17 +52,15 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        purple: {
-          50: "#faf5ff",
-          100: "#f3e8ff",
-          200: "#e9d5ff",
-          300: "#d8b4fe",
-          400: "#c084fc",
-          500: "#a855f7",
-          600: "#9333ea",
-          700: "#7c3aed",
-          800: "#6b21a8",
-          900: "#581c87",
+        // Custom Dev/Tester Theme Colors
+        dev: {
+          black: "#0a0a0a",
+          dark: "#121212",
+          gray: "#1e1e1e",
+          purple: "#7c3aed",
+          green: "#10b981",
+          cyan: "#06b6d4",
+          red: "#ef4444",
         },
       },
       borderRadius: {
@@ -80,21 +77,46 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        fadeInUp: {
-          "0%": {
-            opacity: "0",
-            transform: "translateY(30px)",
-          },
-          "100%": {
-            opacity: "1",
-            transform: "translateY(0)",
-          },
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% - 2rem))" },
+        },
+        "marquee-reverse": {
+          from: { transform: "translateX(calc(-100% - 2rem))" },
+          to: { transform: "translateX(0)" },
+        },
+        matrix: {
+          "0%": { opacity: "0", transform: "translateY(-20px)" },
+          "50%": { opacity: "1" },
+          "100%": { opacity: "0", transform: "translateY(20px)" },
+        },
+        blink: {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0" },
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+        "fade-in-up": {
+          "0%": { opacity: "0", transform: "translateY(20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "fade-in-up": "fadeInUp 0.8s ease-out",
+        marquee: "marquee 50s linear infinite",
+        "marquee-reverse": "marquee-reverse 50s linear infinite",
+        matrix: "matrix 2s ease-in-out infinite",
+        blink: "blink 1s step-end infinite",
+        float: "float 6s ease-in-out infinite",
+        "fade-in-up": "fade-in-up 0.8s ease-out forwards",
+      },
+      backgroundImage: {
+        "grid-pattern":
+          "linear-gradient(to right, #1e1e1e 1px, transparent 1px), linear-gradient(to bottom, #1e1e1e 1px, transparent 1px)",
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
       },
     },
   },
