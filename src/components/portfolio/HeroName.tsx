@@ -15,7 +15,7 @@ export const HeroName = () => {
     const lastName = displayText.slice(9)
 
     return (
-        <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white animate-fade-in-up delay-100 min-h-[1.2em]">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight text-white animate-fade-in-up delay-100 min-h-[1.2em] leading-tight">
             {firstName}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-dev-purple to-dev-cyan">
                 {lastName}

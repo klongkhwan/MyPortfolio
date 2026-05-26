@@ -7,7 +7,7 @@ import { Projects } from "@/components/portfolio/Projects"
 import { Contact } from "@/components/portfolio/Contact"
 import { Footer } from "@/components/portfolio/Footer"
 
-export default function Portfolio() {
+function App() {
   return (
     <main className="min-h-screen bg-black text-white selection:bg-dev-purple selection:text-white">
       <Navbar />
@@ -21,3 +21,5 @@ export default function Portfolio() {
     </main>
   )
 }
+
+export default App

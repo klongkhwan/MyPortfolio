@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import Image from "next/image"
 import { ExternalLink, Github, Play, Eye, Code2, Calendar, Users, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ProjectModal } from "./ProjectModal"
@@ -10,7 +9,7 @@ import { SpotlightCard } from "./SpotlightCard"
 const projectsData = [
     {
         title: "E-commerce Automation Suite",
-        description: "Comprehensive automated testing suite for an e-commerce platform using Playwright and TypeScript.",
+        description: "End-to-end automated testing for an e-commerce platform using Playwright and TypeScript.",
         fullDescription: "Built a complete end-to-end testing framework for a major e-commerce platform. The framework covers critical user journeys including registration, product browsing, and checkout. Features data-driven testing and CI/CD integration.",
         technologies: ["Playwright", "TypeScript", "CI/CD", "Docker", "GitHub Actions"],
         duration: "6 months",
@@ -24,7 +23,7 @@ const projectsData = [
     },
     {
         title: "API Testing Framework",
-        description: "RESTful API testing framework built with Postman and Newman.",
+        description: "REST API validation framework built with Postman and Newman.",
         fullDescription: "Robust API testing framework including automated execution, data validation, and performance benchmarking.",
         technologies: ["Postman", "Newman", "JavaScript", "Node.js"],
         duration: "3 months",
@@ -38,7 +37,7 @@ const projectsData = [
     },
     {
         title: "Mobile App Testing Framework",
-        description: "Cross-platform mobile testing framework using Appium and Python.",
+        description: "Cross-platform mobile testing with Appium and Python.",
         fullDescription: "Comprehensive mobile testing framework supporting both iOS and Android platforms using Appium and Python with device farm integration.",
         technologies: ["Appium", "Python", "Selenium Grid", "BrowserStack"],
         duration: "5 months",

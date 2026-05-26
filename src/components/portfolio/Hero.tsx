@@ -13,7 +13,7 @@ import { HeroName } from "@/components/portfolio/HeroName"
 
 export const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black pt-20">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black pt-20 px-4 sm:px-6 lg:px-8">
       {/* Background Grid & Gradient */}
       <div className="absolute inset-0 bg-grid-pattern opacity-[0.2]" />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black pointer-events-none" />
@@ -21,33 +21,33 @@ export const Hero = () => {
       {/* Kinetic Typography Background */}
       <div className="absolute inset-0 flex flex-col justify-center opacity-[0.03] select-none pointer-events-none overflow-hidden">
         <div className="whitespace-nowrap text-[20vw] font-black leading-none animate-marquee text-white will-change-transform">
-          TESTER DEVELOPER QA AUTOMATION
+          QUALITY ASSURANCE · AUTOMATION · DELIVERY
         </div>
         <div className="whitespace-nowrap text-[20vw] font-black leading-none animate-marquee-reverse text-white ml-20 will-change-transform">
-          QUALITY ASSURANCE TESTING CODE
+          TESTING · RELIABILITY · CONTINUOUS IMPROVEMENT
         </div>
       </div>
 
-      <div className="container relative z-10 px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
+      <div className="container relative z-10 px-0">
+        <div className="grid lg:grid-cols-2 gap-10 xl:gap-12 items-center">
+          <div className="space-y-8 text-center lg:text-left">
             {/* Terminal Badge */}
-            <div className="inline-flex items-center space-x-2 bg-zinc-900/80 backdrop-blur border border-zinc-800 rounded-full px-4 py-2 text-sm text-zinc-400 animate-fade-in-up">
+            <div className="inline-flex items-center space-x-2 bg-zinc-900/80 backdrop-blur border border-zinc-800 rounded-full px-4 py-2 text-sm text-zinc-400 animate-fade-in-up mx-auto lg:mx-0">
               <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-              <span className="font-mono">System.out.print("Hello AI");</span>
+              <span className="font-mono">QA mindset. Developer precision.</span>
             </div>
 
             <div className="space-y-4">
               <HeroName />
-              <p className="text-xl md:text-2xl text-zinc-400 max-w-lg animate-fade-in-up delay-200">
+              <p className="text-lg md:text-2xl text-zinc-400 max-w-lg animate-fade-in-up delay-200 mx-auto lg:mx-0">
                 <span className="text-dev-green font-mono">Software Tester</span> & <span className="text-dev-purple font-mono">Developer</span>
               </p>
-              <p className="text-zinc-500 max-w-xl animate-fade-in-up delay-300 leading-relaxed">
-                Bridging the gap between Development and QA. Passionate about building robust software and breaking it to make it stronger, specializing in automation frameworks and high-quality solution delivery.
+              <p className="text-zinc-500 max-w-xl animate-fade-in-up delay-300 leading-relaxed mx-auto lg:mx-0 text-sm sm:text-base md:text-lg">
+                I build reliable software by combining testing discipline with practical development skills. My focus is automation, quality, and shipping work that is easy to trust and easy to maintain.
               </p>
             </div>
 
-            <div className="flex gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button
                 onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
                 className="bg-white text-black hover:bg-zinc-200 h-12 px-8 text-lg font-medium"

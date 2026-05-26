@@ -4,28 +4,31 @@ import { Terminal, Cpu, Globe, Zap } from "lucide-react"
 
 export const About = () => {
     return (
-        <section id="about" className="py-20 bg-black relative overflow-hidden">
+        <section id="about" className="py-20 bg-black relative overflow-hidden px-4 sm:px-6 lg:px-8">
             {/* Background Decoration */}
             <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-dev-purple/5 to-transparent pointer-events-none" />
 
-            <div className="container px-4 mx-auto relative z-10">
-                <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="container px-0 mx-auto relative z-10">
+                <div className="grid lg:grid-cols-2 gap-12 xl:gap-16 items-center">
                     <div className="space-y-8">
                         <div>
-                            <h2 className="text-4xl font-bold text-white mb-6 flex items-center justify-center md:justify-start">
+                            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 flex items-center justify-center md:justify-start">
                                 <span className="text-dev-green mr-2">./</span>About Me
                             </h2>
-                            <div className="prose prose-invert prose-lg text-zinc-400">
+                            <div className="prose prose-invert prose-lg text-zinc-400 max-w-none space-y-4">
                                 <p>
-                                    I am a <span className="text-white font-semibold">QA Tester</span> with hands-on experience in manual testing, automation, API testing, and SQL. With a strong interest in software development, I actively contribute beyond testing by understanding system architecture, collaborating closely with developers, and supporting application improvement.
+                                    I am a <span className="text-white font-semibold">QA Tester</span> with hands-on experience in manual testing, automation, API testing, and SQL. I focus on spotting risk early, improving test coverage, and helping teams ship more reliably.
                                 </p>
                                 <p>
-                                    I also have experience as a <span className="text-white font-semibold">Developer</span> working with JavaScript/TypeScript, REST APIs, and database systems, which allows me to approach quality from both testing and development perspectives. My goal is to ensure high-quality, reliable.
+                                    I also have experience as a <span className="text-white font-semibold">Developer</span> working with JavaScript/TypeScript, REST APIs, and databases, which helps me understand product quality from both implementation and testing perspectives.
+                                </p>
+                                <p>
+                                    My goal is to build confidence in every release through clear communication, practical automation, and strong attention to detail.
                                 </p>
                             </div>
                         </div>
 
-                        <div className="grid grid-cols-2 gap-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             {[
                                 { icon: Terminal, label: "Automation", desc: "Playwright / Selenium" },
                                 { icon: Cpu, label: "Performance", desc: "JMeter / LoadRunner" },

@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image"
 import {
     Terminal, Cpu, Boxes, Zap, Database,
     FileSearch, Monitor, ClipboardCheck, BarChart3,
@@ -84,7 +83,7 @@ export const Skills = () => {
                                     >
                                         <div className="flex items-start gap-4">
                                             <div className="relative">
-                                                <Image
+                                                <img
                                                     src={tool.icon}
                                                     alt={tool.name}
                                                     width={48}
@@ -120,7 +119,7 @@ export const Skills = () => {
                                             className="group flex flex-col items-center p-3 rounded-lg bg-zinc-900/40 border border-zinc-800/50
                                                 hover:border-dev-cyan/50 hover:bg-zinc-800/40 transition-all duration-300"
                                         >
-                                            <Image
+                                            <img
                                                 src={tool.icon}
                                                 alt={tool.name}
                                                 width={28}

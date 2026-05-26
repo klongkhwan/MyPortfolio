@@ -32,7 +32,7 @@ export const useTypewriter = ({
             })
         }
 
-        let timer: NodeJS.Timeout
+        let timer: ReturnType<typeof setTimeout>
 
         if (!isDeleting && text === currentWord) {
             // Finished typing, pause before deleting
